@@ -1,34 +1,7 @@
 # Develop a Text Classifier [BERT] using Transformers and PyTorch on your Custom Dataset
 
-In recent years `Natural language understanding [NLU]` has made extraordinary advancements in many fields like text correction, text prediction, text translation, text classification, and many more... Recently Meta has released a 200 language Language Translation GitHub repository [FAIRSEQ](https://ai.facebook.com/tools/fairseq/), in the world of `NLP or NLU` there is one name that is not that famous but has many tools under its sleeve is [HuggingFace](https://huggingface.co/), they have a huge library for `NLP` and `Image Classification`.
+In recent years `Natural language understanding [NLU]` has made extraordinary advancements in many fields like text correction, text prediction, text translation, text classification, and many more... Recently Meta has released a 200 language Language Translation GitHub repository [FAIRSEQ](https://ai.facebook.com/tools/fairseq/), in the world of `NLP or NLU` there is one name that is not that famous but has many tools under its sleeve is [HuggingFace](https://huggingface.co/), they have a huge library for `NLP` and `Image Classification`
 
-In this blog, we will train a state-of-the-art Text Classification model using `BERT base uncased`, the word `uncased` means it does not make any difference between `english` and `English`. You can read about the `BERT` model from the Google Research team [here](https://github.com/google-research/bert), and Hugging Face implementation [here](https://huggingface.co/bert-base-uncased).
-
-So, let's get started...
-
-[Youtube video](https://youtu.be/TmT-sKxovb0).
-
-## Requirements
----
-To follow this blog end-to-end, you need to set up a new environment on your computer. However, it is not compulsory to use your local machine, you can train a model on, let's say [Google Colab](https://research.google.com/colaboratory/) and download the trained model to server the requests for classification [it is out of the scope for this blog, maybe in my next blog I will cover this].
-
-> **NOTE** - it is not compulsory but if you can use VS Code to write and run the code, it will be very easy.
-
-### Create a virtual environment
-
-[1] open terminal[linux or mac] or cmd tool[windows] navigate to the directory where you want to keep the project files and run
-
-> `python3 -m venv tutorial-env`
-
-here, `tutorial-env` is the name of the virtual environment.
-
-You can get more help [here](https://docs.python.org/3/tutorial/venv.html).
-
-[2] once the virtual environment is created, activate the virtual environment by running
-
-> on windowns run `tutorial-env\Scripts\activate.bat`
-
-> on mac/linux run `source tutorial-env/bin/activate`
 
 ### Install required packages
 
@@ -40,11 +13,7 @@ Once the virtual environment is activated run the following command to get the r
 
 ### Get the dataset
 
-Here, in this tutorial I am using a dataset downloaded from [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews), it is a movie review dataset, and it has around 50K samples with two labels `positive` and `negative`, but this can be implemented to more than two classes as well.
-
-## Create a dataset for BERT
----
-Now, let's start training the `BERT base uncased` model, at this point I want you to understand that we can train any model from [Huggin Face](https://huggingface.co/) using the same concept I will show you below.
+Here,  I am using a dataset downloaded from [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews), it is a movie review dataset, and it has around 50K samples with two labels `positive` and `negative`, but this can be implemented to more than two classes as well.
 
 ### Read the dataset
 
@@ -179,11 +148,6 @@ once the training is complete, we can evaluate the model as well...
 ```python
     trainer.evaluate()
 ```
-
-## Test the model
----
-You will search all the internet on training a well-known model on your custom dataset, and they will show you everything, but only a very small fraction of the bloggers will explain the following step, by the way, I am one of the small fraction of the blogger.
-
 ### Save the model
 
 We will save the model at the desired location...
