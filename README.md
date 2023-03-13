@@ -249,19 +249,5 @@ let's see if it works or not, fingers are crossed....
 ```python
     get_prediction('I am happy to see you.')
 ```
-### Now where?
 
-The code explained here in this blog can be replicated for any text classification problem, you can experiment with different models as well.
 
-### Where is the code?
-
-The code used in this blog can be downloaded from my [Github](https://github.com/RajKKapadia/Transformers-Text-Classification-BERT-Blog).
-
-## About me
----
-I am `Raj Kapadia`, I am passionate about `AI/ML/DL` and their use in different domains, I also love to build `chatbots` using `Google Dialogflow`. For any work, you can reach out to me at...
-
-* [LinkedIn](https://www.linkedin.com/in/rajkkapadia/)
-* [Fiverr](https://www.fiverr.com/rajkkapadia​)
-* [Upwork](https://www.upwork.com/freelancers/~0176aeacfcff7f1fc2)
-* [Youtube](https://www.youtube.com/channel/UCOT01XvBSj12xQsANtTeAcQ)
